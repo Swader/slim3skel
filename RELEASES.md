@@ -17,3 +17,16 @@ Basic skeleton based on Rob Allen's. Differences from original include:
 
 To smoothly use this one, you should have BowerPHP, Mini-Asset and Robo installed globally with Composer (recommended, so you can rid yourself of the unstable plague that is NPM and its packages). You can also install them locally (in the project itself) but then you need to modify the `RoboFile` to execute from `vendor/bin/mini_asset` rather than just `mini_asset`.
 
+## Version 1.1
+
+Direct extension of V1.0.
+
+Changes: Global Twig Variables.
+
+To get variables that are available and constant across the entire project, use Twig globals:
+
+- define them in your `.env` file (`GA_CODE` in `.env.example`)
+- add them into `settings` under the `global` key of `twig` (see `ga_code` for example)
+- use them in any template you wish with `{{ myvar }}` - see `master.twig`, the Google Analytics script near the bottom for example.
+
+Useful for tracking codes, author names and dates for copyright footers, etc.

@@ -9,6 +9,9 @@ return [
             'debug' => true,
             'auto_reload' => true,
         ],
+        'globals' => [
+            'ga_code' => getenv('GA_CODE')
+        ]
     ],
 
     // monolog settings

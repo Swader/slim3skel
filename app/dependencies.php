@@ -14,6 +14,13 @@ $view = new \Slim\Views\Twig(
 );
 $view->addExtension(new Twig_Extension_Debug());
 $view->addExtension(new \Slim\Views\TwigExtension($app->router, $app->request->getUri()));
+
+/** @var \Twig_Environment $env */
+$env = $view->getEnvironment();
+foreach ($app->settings['view']['globals'] as $global => $value) {
+    $env->addGlobal($global, $value);
+}
+
 $container->register($view);
 
 // Flash messages

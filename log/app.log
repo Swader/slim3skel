@@ -29,3 +29,5 @@
 [2015-08-05 10:22:16] app.INFO: Index action [] {"uid":"d4b7dd4"}
 [2015-08-05 10:22:22] app.INFO: Index action [] {"uid":"cfc94f5"}
 [2015-08-05 10:22:23] app.INFO: Test action [] {"uid":"a1ded3c"}
+[2015-08-06 06:22:01] app.INFO: Home page action dispatched [] {"uid":"c9b210a"}
+[2015-08-06 06:22:05] app.INFO: Home page action dispatched [] {"uid":"8ff7db6"}
