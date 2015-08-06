@@ -1,13 +1,11 @@
 {
-  "name": "swader/edithor",
-  "description": "Edithor - the online publisher's assistance tool.",
+  "name": "swader/slim3skel",
+  "description": "Skeleton application based on Slim 3",
   "license": "MIT",
   "type": "project",
   "keywords": [
     "slim-framework",
-    "edithor",
-    "publishing",
-    "cms"
+    "skeleton"
   ],
   "authors": [
     {
